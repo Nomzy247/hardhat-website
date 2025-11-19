@@ -82,6 +82,12 @@ EDR detects common error situations and reports clear error messages. For exampl
 - Incorrectly calling a precompiled contract
 - Trying to deploy a contract that exceeds the bytecode size limit imposed by [EIP-170](https://eips.ethereum.org/EIPS/eip-170)
 
+### Development-only JSON-RPC methods
+
+EDR provides additional JSON-RPC methods that are useful for development and testing. These methods allow you to do things like manipulate the blockchain state or control mining behavior.
+
+We don't recommend using these methods directly. Instead, use Hardhat's [network helpers](/docs/plugins/hardhat-network-helpers), which wrap them in a more user-friendly way.
+
 ## Initial blockchain state
 
 The initial state of a simulated network depends on whether you're using forking mode and your [Network Config](/docs/reference/configuration#network-configuration).
